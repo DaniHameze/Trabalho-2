@@ -1,0 +1,23 @@
+# charada (print, input, if, match - case, for)
+
+print('¿O que é o que é? :) \n Na cidade é uma profissão, na estrada é um perigo e na mata é um inseto.')
+resposta = 'Barbeiro'
+escreva = str(input('Qual seu primeiro palpite? : '))
+while escreva != 'Barbeiro':
+    if escreva == 'Barata':
+        print('Quase lá')
+    print('Ops resposta errada')
+    escreva = str(input('Digite novamente : '))
+    match escreva:
+     case 'Borboleta' :
+        print('Dica : A resposta tem 8 caracteres')
+     case 'Barata' :
+        print('Dica : Pode ser verde ou marrom')
+     case 'Não sei' :
+        print('Dica : Corta cabelo')
+print('Resposta correta parabens!')
+print('Resposta: Barbeiro')
+print('  ')
+for escreva in 'ᛒᚣᚱᛒᛊᛁᚱᛜ':
+    print(escreva)
+print('  ')
