@@ -1,0 +1,16 @@
+# Senha aleatória (romdom)
+
+import random
+
+min = 'abcdefghijklmnopqrstuvwxyz'
+max = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+num = '0123456789'
+
+quantidade = input('Qual o tamanho da senha: ')
+quantidadeint = int(quantidade)
+tamanho = quantidadeint
+
+total = min + max + num
+senhaTotal ="" .join(random.sample(total, tamanho))
+
+print('senhaTotal='+ senhaTotal)
