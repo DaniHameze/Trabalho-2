@@ -1,0 +1,37 @@
+# cinema (vetor list, and, if - else)
+
+print('        ')
+print('Data: ')
+from datetime import date
+
+data_atual = date.today()
+print(data_atual)
+
+
+print("==========================")
+print("Cinépolis Estação BH")
+print("==========================")
+filmescartaz = ["Pantera Negra", "Mundo Estranho", "Noite Infeliz"]
+print("FILMES EM CARTAZ : \nPantera Negra \nMundo Estranho \nNoite Infeliz")
+print("==========================")
+pedido = input("Bem vindo(a)! \nQual filme gostaria de assistir: ")
+if pedido == filmescartaz[0]:
+    print("Sessões de hoje: \n15:00 \n18:15 \n21:30")
+if pedido == filmescartaz[1]:
+    print("Sessões de hoje: \n14:15 \n16:45")
+if pedido == filmescartaz[2]:
+    print("Sessões de hoje: \n19:00")
+
+sessao=input('Gostaria de assistir à alguma sessão? [sim/não] : ')
+if sessao != 'sim' and sessao !='não':
+    print('Escolha sim ou não')
+if sessao == 'sim' and sessao != 'não':
+    input("Escolha um horário: ")
+    if sessao == 'sim'and pedido ==filmescartaz[0] and '15:00' and '18:15' and '21:30':
+        print("Sua sessão será na sala: 3 ")
+    if sessao == 'sim'and pedido ==filmescartaz[1] and '14:15' and '16:45':
+        print("Sua sessão será na sala: 2 ")
+    if sessao == 'sim'and pedido ==filmescartaz[2] and '19:00':
+        print("Sua sessão será na sala: 5 ")
+else:
+    print("Que pena :( \nTalvez na próxima")
