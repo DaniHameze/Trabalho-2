@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+     <title>   Usando eventos no JavaScript </title>
+    </head>
+    <body onload="checkCookies()">
+
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+            style="background-color:crimson;width:130px;height:20px;padding:40px;">
+        Passe o mouse em mim!
+        </div>
+
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)"
+            style="background-color:darkorange;width: 130px;height:20px;padding:40px;">
+        </div>
+
+        <script>
+
+        function mDown(obj)
+        {
+            obj.style.backgroundColor="#1ec5e5";
+            obj.innerHTML="Solta o clique aí Zé!"
+        }
+
+        function mUp(obj)
+        {
+            obj.style.backgroundColor="#D94A38";
+            obj.innerHTML="Valeu Zé!"
+        }
+
+        function mOver(obj)
+        {
+            obj.innerHTML="Obrigado!"
+        }    
+
+        function mOut(obj)
+        {
+            obj.innerHTML="Volta aqui sô!"
+        }
+
+        function checkCookies()
+        {
+            if(navigator.cookieEnable==true)
+            {
+                alert("Cookies estão sendo permitidos!")
+            }
+            else {
+                alert("Cookies não são permitidos!")
+            }
+        }
+        function myFunction()
+            {
+                var x=document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+
+        
+    </script>
+        <p>
+            Informe seu nome: <input type="text" id="fname" onchange="myFunction()">
+            Ao clicarmos ENTER texto será convertido para maiúsculo.
+        </p>
+        
+    </body>
+</html>
+
+
+
+
+
+
+---------------------------------------------------------------
+
+
+
+
+
+<!DOCTYPE html>
+<html lang=pt-BR>
+
+    <head>
+       <title>Aula dia 24/03/2023></title>
+       <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type = "text/javascript">
+            var nome="João das Goiabas";
+            var idade=20;
+            document.write("Olá, meu nome é ",nome," e eu tenho ",idade," anos de vida, mas minha idade mental será sempre de 5ª série!!!");
+        </script>
+        <p>
+            Agora quando você clicar no botão será apresentada uma mensagem:
+        </p>
+        
+        <button onclick="alert('Você clicou no botão')"> Clique aqui! </button>
+
+        <p>Usando o evento onClick no javascript
+
+            <h3 onclick="this.innerHTML='Isso é o que acontece quando usamos o evento onClick!'">
+                Clique aqui para testar o evento 
+            </h3>
+        </p>
+                
+    </body>
+
+</html>
