@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>oi</h1>
+
+    <button id="mercurio">mercurio</button>
+    <button id="venus">venus</button>
+    <button id="marte">marte</button>
+
+    <script>
+        let mercurio = document.getElementById("mercurio");
+        let venus = document.getElementById("venus");
+        let marte = document.getElementById("marte");   
+
+        mercurio.addEventListener("click", function(){let userChoice = prompt("Mercurio");
+        if(userChoice){
+            document.write("User chose" + userChoice + "for choice mercurio");
+            alert("Voce escolheu" + userChoice + "para mercurio");
+        }
+    });
+        
+        venus.addEventListener("click", function(){let userChoice = prompt("Venus");});
+        marte.addEventListener("click", function(){let userChoice = prompt("Marte");});
+    </script>
+
+<style>
+    
+</style>
+
+
+</body>
+</html>
+
+
+
+--------------------------------------------------------------------------
+
+
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPAÇO</title>
+</head>
+<header>
+    <h1>Viajando entre planetas</h1>
+</header>
+<body>
+    <p>Bem vindo(a) a sua viagem estelar! Qual planeta gostaria de conhecer primeiro?</p>
+    
+    <button onclick="document.write('Mercurio, terra')"> Clique aqui para escolher! </button>
+    
+    <script type="text/javascript"> 
+    
+    </script>
+
+</body>
+<style>
+    body{
+        background:linear-gradient(72deg, rgb(23, 4, 59) 5%, rgb(0, 0, 0) 95%);
+        color: white;
+        font-family: monospace;
+    }
+    h1{
+        color: white;
+        font-family: monospace;
+        text-shadow: 2px, 2px, 1px grey;
+
+    }
+    header{
+        background-image: url(https://cdn.shopify.com/s/files/1/0987/6688/collections/HMS.StarWars.Web.CollectionHeader.jpg?v=1651591833);
+        border-radius: 10px;
+        display: flex;
+       justify-content: center;
+    }
+    document.write{
+        color: blue;
+    }
+    button{
+        background-color: blue;
+    }
+</style>
+</html>
