@@ -83,9 +83,10 @@
                     alert("Luas de Marte : 2")
                 break;   
                 default:
-                    alert("Reinicie a página caso queira escolher um planeta") 
+                    alert("Digite uma opção válida!") 
             }
             }
+            
             const mensagem = "Obrigado por visitar nosso site! :D "
             let mensagemCompleta = "";
             for (let i = 0;i < mensagem.length;
