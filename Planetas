@@ -1,49 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>oi</h1>
-
-    <button id="mercurio">mercurio</button>
-    <button id="venus">venus</button>
-    <button id="marte">marte</button>
-
-    <script>
-        let mercurio = document.getElementById("mercurio");
-        let venus = document.getElementById("venus");
-        let marte = document.getElementById("marte");   
-
-        mercurio.addEventListener("click", function(){let userChoice = prompt("Mercurio");
-        if(userChoice){
-            document.write("User chose" + userChoice + "for choice mercurio");
-            alert("Voce escolheu" + userChoice + "para mercurio");
-        }
-    });
-        
-        venus.addEventListener("click", function(){let userChoice = prompt("Venus");});
-        marte.addEventListener("click", function(){let userChoice = prompt("Marte");});
-    </script>
-
-<style>
-    
-</style>
-
-
-</body>
-</html>
-
-
-
---------------------------------------------------------------------------
-
-
-
-<!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -52,15 +7,67 @@
     <title>ESPAÇO</title>
 </head>
 <header>
-    <h1>Viajando entre planetas</h1>
+    <h1>VIAJANDO ENTRE PLANETAS</h1>
 </header>
 <body>
-    <p>Bem vindo(a) a sua viagem estelar! Qual planeta gostaria de conhecer primeiro?</p>
-    
-    <button onclick="document.write('Mercurio, terra')"> Clique aqui para escolher! </button>
-    
+    <p>Bem vindo(a) a sua viagem estelar! Qual dos planetas rochosos gostaria de conhecer primeiro?</p>
+    <hr>
+    <p>
+        
+        <img src="https://cdn.pixabay.com/photo/2012/01/09/09/33/mercury-11591_960_720.png" width="24%">
+        <img src="https://cdn.pixabay.com/photo/2011/12/13/14/39/venus-11022_960_720.jpg" width="24%">
+        <img src="https://cdn.pixabay.com/photo/2011/12/13/14/28/earth-11008_960_720.jpg" width="24%">
+        <img src="https://cdn.pixabay.com/photo/2011/12/13/14/30/mars-11012_1280.jpg" width="24%">
+    </p>
+   <hr>
+   Para conhece-los basta digitar : Mercúrio, Vênus, Terra ou Marte.
+   <br><br>
+    <section>
+    <input type="text" placeholder="Escolha um planeta" id="planeta" onkeyup="showButton()">
+    <button onclick="minhaFuncao()"> Enviar </button>
+    </section><br>
+    <div class="flex-container" id="meu-elemento"></div>
+
+    <div id="rodape"></div>
+
     <script type="text/javascript"> 
-    
+
+        nome=window.prompt("Olá, como gostaria de ser chamado?")
+         if(nome!= null){
+            alert("Bem Vindo(a) "+ nome)
+            document.write("👽") 
+        }
+        function minhaFuncao(){
+            var valorInput = document.getElementById("planeta").value;
+            var meuElemento = document.getElementById("meu-elemento");
+           
+            switch (valorInput) {
+                case "Mercúrio":
+                    alert("Você escolheu Mércurio")
+                    meuElemento.innerHTML ="O menor planeta do nosso sistema solar e mais próximo do Sol, Mercúrio é apenas um pouco maior que a Lua da Terra. Da superfície de Mercúrio, o Sol pareceria três vezes maior do que quando visto da Terra, e a luz do sol seria até sete vezes mais brilhante. Apesar da proximidade com o Sol, Mercúrio não é o planeta mais quente do nosso sistema solar – esse título pertence à vizinha Vênus, graças à sua densa atmosfera.Por causa da órbita elíptica – em forma de ovo – de Mercúrio e rotação lenta, o Sol parece nascer brevemente, se pôr e nascer novamente de algumas partes da superfície do planeta. A mesma coisa acontece ao contrário ao pôr do sol.";
+                break;
+                case "Vênus":
+                    alert("Você escolheu Vênus")
+                    meuElemento.innerHTML = "Vênus é o segundo planeta a partir do Sol e é o vizinho planetário mais próximo da Terra. É um dos quatro planetas internos, terrestres (ou rochosos), e muitas vezes é chamado de gêmeo da Terra porque é semelhante em tamanho e densidade. Estes não são gêmeos idênticos, no entanto – existem diferenças radicais entre os dois mundos.Vênus tem uma atmosfera espessa e tóxica cheia de dióxido de carbono e está perpetuamente envolta em espessas nuvens amareladas de ácido sulfúrico que retêm o calor, causando um efeito estufa descontrolado. É o planeta mais quente do nosso sistema solar. As temperaturas da superfície em Vênus são de cerca de 900 graus Fahrenheit (475 graus Celsius).Vênus tem uma pressão de ar esmagadora em sua superfície – mais de 90 vezes a da Terra – semelhante à pressão que você encontraria uma milha abaixo do oceano na Terra.Vênus gira em seu eixo para trás, em comparação com a maioria dos outros planetas do sistema solar. Isso significa que, em Vênus, o Sol nasce no oeste e se põe no leste, oposto ao que experimentamos na Terra. (Não é o único planeta em nosso sistema solar com uma rotação tão estranha – Urano gira de lado.)Vênus foi o primeiro planeta a ser explorado por uma espaçonave - o Mariner 2 da NASA voou com sucesso e escaneou o mundo coberto de nuvens em 14 de dezembro de 1962. Desde então, várias espaçonaves dos EUA e de outras agências espaciais exploraram Vênus, incluindo o da NASA Magellan, que mapeou a superfície do planeta com radar. As espaçonaves soviéticas fizeram os pousos mais bem-sucedidos na superfície de Vênus até hoje, mas não sobreviveram por muito tempo devido ao calor extremo e à pressão esmagadora. Uma sonda americana, uma das Pioneer Venus Multiprobes da NASA, sobreviveu por cerca de uma hora depois de atingir a superfície em 1978.As missões mais recentes de Vênus incluem a Venus Express da ESA (que orbitou de 2006 a 2016) e a Akatsuki Venus Climate Orbiter do Japão (em órbita desde 2016).A Parker Solar Probe da NASA fez vários sobrevôos de Vênus. Em 9 de fevereiro de 2022, a NASA anunciou que a espaçonave havia capturado suas primeiras imagens de luz visível da superfície de Vênus do espaço durante seu sobrevoo em fevereiro de 2021.";
+                break;
+                case "Terra":
+                    alert("Você escolheu Terra")
+                    meuElemento.innerHTML = "Nosso planeta natal é o terceiro planeta a partir do Sol e o único lugar que conhecemos até agora que é habitado por seres vivos.Embora a Terra seja apenas o quinto maior planeta do sistema solar, é o único mundo em nosso sistema solar com água líquida na superfície. Apenas um pouco maior que a vizinha Vênus, a Terra é o maior dos quatro planetas mais próximos do Sol, todos feitos de rocha e metal.O nome Terra tem pelo menos 1.000 anos. Todos os planetas, exceto a Terra, receberam nomes de deuses e deusas gregos e romanos. No entanto, o nome Terra é uma palavra germânica, que significa simplesmente “o solo”.";
+                break;
+                case "Marte":
+                    alert("Você escolheu Marte")
+                    meuElemento.innerHTML = "Marte é o quarto planeta a partir do Sol – um mundo empoeirado, frio e desértico com uma atmosfera muito rarefeita. Marte também é um planeta dinâmico com estações, calotas polares, cânions, vulcões extintos e evidências de que era ainda mais ativo no passado.Marte é um dos corpos mais explorados em nosso sistema solar e é o único planeta para onde enviamos rovers para percorrer a paisagem alienígena.Atualmente, a NASA tem dois rovers (Curiosity e Perseverance), um módulo de pouso (InSight) e um helicóptero (Ingenuity) explorando a superfície de Marte.O rover Perseverance - o maior e mais avançado rover que a NASA enviou para outro mundo - pousou em Marte em 18 de fevereiro de 2021, após uma jornada de 203 dias percorrendo 293 milhões de milhas (472 milhões de quilômetros). O helicóptero Ingenuity viajou para Marte preso ao ventre do Perseverance.";
+                break;    
+            }
+            }
+            const mensagem = "Obrigado por visitar nosso site! :D "
+            let mensagemCompleta = "";
+            for (let i = 0;i < mensagem.length;
+            i++){
+                mensagemCompleta += mensagem[i]+'';
+            }
+            const rodape = document.getElementById('rodape');
+            rodape.innerHTML = mensagemCompleta;
     </script>
 
 </body>
@@ -69,6 +76,7 @@
         background:linear-gradient(72deg, rgb(23, 4, 59) 5%, rgb(0, 0, 0) 95%);
         color: white;
         font-family: monospace;
+        font-size: 17px;
     }
     h1{
         color: white;
@@ -82,11 +90,49 @@
         display: flex;
        justify-content: center;
     }
-    document.write{
-        color: blue;
+    footer{
+        font-family: monospace;
+        text-align: center;
+        align-items: center;
     }
     button{
-        background-color: blue;
+        background-color: rgb(12, 12, 95);
+        border-radius: 10px;
+        font-family: monospace;
+        color: white;
+        outline: unset;
+        padding: 10px;
+        width: 80px;
+        cursor: pointer;
+    }
+    input{
+        background-color: rgba(0, 0, 0, 0.551);
+        color: white;
+        font-family: monospace;
+        outline: unset;
+        padding: 20px;
+        width: 200px;
+        border-radius: 20px; 
+    }
+    p img{
+        border-radius: 20px;
+    }
+    section{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    h2{
+        width: 100%;
+        word-spacing: 230px;
+        text-align: center;
+        align-items: center;
+    }
+    .flex-container{
+        background-color: rgba(29, 12, 70, 0.637);
+        border-radius: 5px;
+        padding: 10px;
     }
 </style>
+</body>
 </html>
